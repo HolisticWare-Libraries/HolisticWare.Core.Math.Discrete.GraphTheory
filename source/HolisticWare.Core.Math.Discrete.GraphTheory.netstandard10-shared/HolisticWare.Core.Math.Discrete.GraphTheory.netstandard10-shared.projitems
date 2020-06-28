@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{C0839C83-7725-420D-B39A-6B5E5FBF7162}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Core.Math.Discrete.GraphTheory</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Networks\Edge.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Networks\Graph.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Networks\Node.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphs\Edge.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphs\Graph.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphs\Node.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphs\GraphElement.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphs\Path.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphs\Cycle.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Graphs\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Networks\" />
+  </ItemGroup>
+</Project>
