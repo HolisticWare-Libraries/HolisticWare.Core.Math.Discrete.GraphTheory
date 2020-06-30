@@ -80,7 +80,7 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
         /// <summary>
         /// 
         /// </summary>
-        // TODO: split code into Nodes, Edges and Graph definitions!
+        // TODO: @todo split code into Nodes, Edges and Graph definitions!
         [Test]
         public void GraphCreate()
         {

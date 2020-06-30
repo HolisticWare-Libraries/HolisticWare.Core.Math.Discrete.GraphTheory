@@ -46,7 +46,7 @@ HolisticWare.Core.Math.Discrete.GraphTheory
 
     *   https://riptutorial.com/algorithm/example/23953/introduction-to-graph-theory
 
-        TODO: riptutorial samples
+        TODO: @todo riptutorial samples
 
     *   http://theoryofprogramming.com/2014/12/24/graph-theory-basics/
 
