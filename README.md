@@ -2,6 +2,8 @@
 
 Implementation of Graph Theory data structures and algorithms.
 
+*  TODO: @todo merge initial implementation
+
 HolisticWare.Core.Math.Discrete.GraphTheory
 
 *   library
