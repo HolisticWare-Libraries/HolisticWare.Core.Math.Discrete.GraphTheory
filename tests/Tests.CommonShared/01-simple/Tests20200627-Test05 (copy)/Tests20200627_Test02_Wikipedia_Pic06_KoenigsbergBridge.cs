@@ -75,14 +75,6 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
     /// </summary>
     /// <see href="https://en.wikipedia.org/wiki/Graph_theory#Applications"/>
     /// http://stanford.edu/~jolivier/305_refresher_notes/Basic_graph_theory_and_algorithms.pdf
-    /// Adjacency Matrix
-    /// Adjacency List
-    /// Search Depth First
-    /// Search Depth First
-    /// https://medium.com/better-programming/graph-theory-algorithms-simplified-9a6868cc222
-    /// https://medium.com/swlh/vanilla-search-techniques-on-graphs-dfs-and-bfs-c5cff5d0937d
-    /// http://math.tut.fi/~ruohonen/GT_English.pdf
-    /// 
     [TestClass]
     public partial class Tests20200627_Stanford_Edu_JOlivier
     {
@@ -159,7 +151,15 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
         }
 
         [Test]
-        public void IsComplete()
+        public void Complete()
+        {
+            Graph g = new Graph();
+
+            return;
+        }
+
+        [Test]
+        public void Complements()
         {
             Graph g = new Graph();
 

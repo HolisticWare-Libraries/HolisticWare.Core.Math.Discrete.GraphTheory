@@ -77,9 +77,14 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
     [TestClass]
     public partial class Tests20200627_Test01_GeeksForGeeks
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        // TODO: split code into Nodes, Edges and Graph definitions!
         [Test]
         public void GraphCreate()
         {
+
             Graph g = new Graph();
 
             Node n1 = new Node()
