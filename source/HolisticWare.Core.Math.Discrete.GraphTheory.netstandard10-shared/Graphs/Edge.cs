@@ -1,4 +1,6 @@
-﻿namespace Core.Math.Discrete.GraphTheory.Graphs
+﻿using System;
+
+namespace Core.Math.Discrete.GraphTheory.Graphs
 {
     /// <summary>
     /// Edge, Arc
@@ -8,6 +10,12 @@
     {
         public Edge(Node begin, Node end)
         {
+        }
+
+        public (Node first, Node second) Tuple
+        {
+            get;
+            set;
         }
 
         public override string ToString()
