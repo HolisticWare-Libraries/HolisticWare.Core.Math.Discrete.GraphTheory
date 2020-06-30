@@ -44,6 +44,15 @@ HolisticWare.Core.Math.Discrete.GraphTheory
 
 *   https://en.wikipedia.org/wiki/Graph_theory
 
+*   https://www.dbai.tuwien.ac.at/staff/kronegger/misc/AlgorithmsInGraphTheory_Script.pdf
+
+*   http://ranger.uta.edu/~chqding/cse5311/Lectures/GraphTheory.pdf
+
+*   https://jeffe.cs.illinois.edu/teaching/algorithms/book/05-graphs.pdf
+
+*   http://math.tut.fi/~ruohonen/GT_English.pdf
+
+
 *   videos
 
     *   https://www.youtube.com/watch?v=82zlRaRUsaY
@@ -71,9 +80,10 @@ HolisticWare.Core.Math.Discrete.GraphTheory
     *   Search Depth First
 
     *   Search Depth First
-https://medium.com/better-programming/graph-theory-algorithms-simplified-9a6868cc222
-https://medium.com/swlh/vanilla-search-techniques-on-graphs-dfs-and-bfs-c5cff5d0937d
-http://math.tut.fi/~ruohonen/GT_English.pdf
 
 
 *   https://medium.com/basecs/a-gentle-introduction-to-graph-theory-77969829ead8
+
+*   https://medium.com/better-programming/graph-theory-algorithms-simplified-9a6868cc222
+
+*   https://medium.com/swlh/vanilla-search-techniques-on-graphs-dfs-and-bfs-c5cff5d0937d
