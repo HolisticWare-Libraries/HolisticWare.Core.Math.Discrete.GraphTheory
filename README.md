@@ -54,11 +54,19 @@ HolisticWare.Core.Math.Discrete.GraphTheory
 
     *   http://www.graph-magics.com/practic_use.php
 
+    *   https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/readings/MIT6_042JF10_chap05.pdf
+
+        *   https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/
+
     *   https://www8.cs.umu.se/kurser/TDBAfl/VT06/algorithms/BOOK/BOOK2/NODE59.HTM
 
     *   https://runestone.academy/runestone/books/published/pythonds/Graphs/toctree.html
 
     *   http://www.personal.kent.edu/~rmuhamma/Algorithms/MyAlgorithms/GraphAlgor/graphIntro.htm
+
+    *   https://www.python-course.eu/graphs_python.php
+
+    *   http://www.hamilton.ie/ollie/Downloads/Graph.pdf
 
 *   theory
 
@@ -105,6 +113,10 @@ HolisticWare.Core.Math.Discrete.GraphTheory
     *   https://www.youtube.com/watch?v=HmQR8Xy9DeM
 
     *   https://www.youtube.com/watch?v=09_LlHjoEiY
+
+    *   https://discuss.codechef.com/t/graph-theory-complete-video-series-part-1-3-june-2020-1-lecture-added/46839
+
+    *   https://discuss.codechef.com/t/graph-theory-complete-video-series-advanced-algorithms-20-april-2020-1-lecture-added/54281
 
 *   github repos
 
