@@ -76,8 +76,32 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
     /// <see href="https://en.wikipedia.org/wiki/Graph_theory#Applications"/>
     /// http://stanford.edu/~jolivier/305_refresher_notes/Basic_graph_theory_and_algorithms.pdf
     [TestClass]
-    public partial class Tests20200627_Stanford_Edu_JOlivier
+    public partial class Tests20200630_RIP_Tutorial
     {
+        [Test]
+        public void T011_Nodes_Define()
+        {
+            Node n01 = new Node();
+
+            return;
+        }
+
+        [Test]
+        public void T012_Edges_Define()
+        {
+            //Edge e01 = new Edge(null, null);
+
+            return;
+        }
+
+        [Test]
+        public void T013_Graph_Define()
+        {
+            Graph g01 = new Graph();
+
+            return;
+        }
+
         [Test]
         public void GraphCreate()
         {

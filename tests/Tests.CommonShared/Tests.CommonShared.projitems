@@ -14,7 +14,7 @@
     <Folder Include="$(MSBuildThisFileDirectory)01-simple\Tests20200627-Test03\" />
     <Folder Include="$(MSBuildThisFileDirectory)01-simple\Tests20200627-Test05\" />
     <Folder Include="$(MSBuildThisFileDirectory)01-simple\Tests20200627-Test04\" />
-    <Folder Include="$(MSBuildThisFileDirectory)01-simple\Tests20200627-Test05 %28copy%29\" />
+    <Folder Include="$(MSBuildThisFileDirectory)01-simple\Tests20200630_RIP_Tutorial\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200627-Test01\Tests20200627_Test01_GeeksForGeeks.cs" />
@@ -22,6 +22,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200627-Test03\Tests20200627_Test02_Wikipedia_Pic04_Languages.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200627-Test05\Tests20200627_Test02_Wikipedia_Pic06_KoenigsbergBridge.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200627-Test04\Tests20200627_Test02_Wikipedia_Pic04_MorenoSociogram.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200627-Test05 %28copy%29\Tests20200627_Test02_Wikipedia_Pic06_KoenigsbergBridge.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200630_RIP_Tutorial\Tests20200630_RIP_Tutorial.cs" />
   </ItemGroup>
 </Project>
