@@ -73,30 +73,92 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
     /// <summary>
     /// Test01
     /// </summary>
-    /// <see href="https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/"/>
+    /// <see href="https://en.wikipedia.org/wiki/Breadth-first_search"/>
     [TestClass]
-    public partial class Tests20200627_Test01_GeeksForGeeks
+    public partial class Tests20200701_Wikipedia_BreadthFirstSearch
     {
-        /// <summary>
-        /// 
-        /// </summary>
-        // TODO: @todo split code into Nodes, Edges and Graph definitions!
         [Test]
         public void GraphCreate()
         {
+            // create object
+            Node    n1 = new Node();
+                    // modify property
+                    n1.Label = "1";
+
+            // create object
+            Node n2 = new Node();
+                    // modify property
+                    n2.Label = 2.ToString();
+
+            // create object with initializer
+            Node n3 = new Node()
+                            {
+                                Label = "3"
+                            };
+            Node n4 = new Node()
+                            {
+                                Label = "4"
+                            };
+            Node n5 = new Node()
+                            {
+                                Label = "5"
+                            };
+            Node n6 = new Node()
+                            {
+                                Label = "6"
+                            };
+
+            //Console.WriteLine($" Node n1 = {n1.ToString()}");
+            //Console.WriteLine($" Node n2 = {n2.ToString()}");
+
+            // declaration
+            Edge e1;
+            // definition
+            e1 = new Edge(n6, n4);
+            e1.Label = "n6, n4";
+
+            Edge e2 = new Edge(n4, n3)
+            {
+                Label = "n4, n3"
+            };
+            Edge e3 = new Edge(n4, n5)
+            {
+                Label = "n4, n5"
+            };
+            Edge e4 = new Edge(n2, n3)
+            {
+                Label = "n2, n3"
+            };
+            Edge e5 = new Edge(n5, n2)
+            {
+                Label = "n5, n2"
+            };
+            Edge e6 = new Edge(n2, n1)
+            {
+                Label = "n2, n1"
+            };
+            Edge e7 = new Edge(n5, n1)
+            {
+                Label = "n5, n1"
+            };
+
+            Console_WriteLine($" Edge e1 = {e1.ToString()}");
+            Console_WriteLine($" Edge e2 = {e2.ToString()}");
+
 
             Graph g = new Graph();
-
-            Node n1 = new Node()
-            {
-                Label = "1"
-            };
-            Node n2 = new Node()
-            {
-                Label = "1"
-            };
+            g.Add(n1);
 
             return;
+        }
+
+        public void Console_WriteLine(string message)
+        {
+            using (System.IO.StreamWriter writer = new System.IO.StreamWriter(System.Console.OpenStandardOutput()))
+            {
+                writer.WriteLine(message);
+            }
+
         }
 
     }

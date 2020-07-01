@@ -9,19 +9,16 @@
     <Import_RootNamespace>Tests.CommonShared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)01-simple\Tests20200627-Test01\" />
-    <Folder Include="$(MSBuildThisFileDirectory)01-simple\Tests20200627-Test02\" />
-    <Folder Include="$(MSBuildThisFileDirectory)01-simple\Tests20200627-Test03\" />
-    <Folder Include="$(MSBuildThisFileDirectory)01-simple\Tests20200627-Test05\" />
-    <Folder Include="$(MSBuildThisFileDirectory)01-simple\Tests20200627-Test04\" />
-    <Folder Include="$(MSBuildThisFileDirectory)01-simple\Tests20200630_RIP_Tutorial\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200627-Test01\Tests20200627_Test01_GeeksForGeeks.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200627-Test02\Tests20200627_Wikipedia_Pic01_Drawing.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200627-Test03\Tests20200627_Test02_Wikipedia_Pic04_Languages.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200627-Test05\Tests20200627_Test02_Wikipedia_Pic06_KoenigsbergBridge.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200627-Test04\Tests20200627_Test02_Wikipedia_Pic04_MorenoSociogram.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200630_RIP_Tutorial\Tests20200630_RIP_Tutorial.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200627_GeeksForGeeks.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200627_Wikipedia_Pic01_Drawing.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200627_Wikipedia_Pic04_Languages.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200627_Wikipedia_Pic04_MorenoSociogram.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200627_Wikipedia_Pic06_KoenigsbergBridge.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200630_RIP_Tutorial.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200701_Wikipedia_DepthFirstSearch.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200701_Wikipedia_BreadthFirstSearch.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200701_Wikipedia_Dijkstra.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200701_Wikipedia_AStarSearch.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200701_Wikipedia_BellmanFord.cs" />
   </ItemGroup>
 </Project>

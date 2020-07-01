@@ -14,23 +14,69 @@ namespace Core.Math.Discrete.GraphTheory.Graphs
     {
         public Graph()
         {
+            nodes = new HashSet<Node>();
+            edges = new HashSet<Edge>();
         }
 
-        public IEnumerable<Node> Nodes
+        HashSet<Node> nodes;
+
+        public HashSet<Node> Nodes
         {
-            get;
-            set;
+            get
+            {
+                return nodes;
+            }
         }
 
-        public IEnumerable<Edge> Edges
+        HashSet<Edge> edges;
+
+        public HashSet<Edge> Edges
         {
-            get;
-            set;
+            get
+            {
+                return edges;
+            }
         }
 
-        //public override string ToString()
-        //{
-        //    return base.ToString();
-        //}
+        public void Add(Node n)
+        {
+            nodes.Add(n);
+
+            return;
+        }
+
+        public void Remove(Node n)
+        {
+            nodes.Remove(n);
+            edges.RemoveWhere
+                    (
+                        (Edge e) =>
+                        {
+                            return (e.Tuple.first == n || e.Tuple.second == n);
+                        }
+                    );
+            return;
+        }
+
+        public void Add(Edge e)
+        {
+            edges.Add(e);
+
+            return;
+        }
+
+        public void Remove(Edge e)
+        {
+            edges.Remove(e);
+
+            return;
+
+        }
+
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
 }

@@ -73,9 +73,9 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
     /// <summary>
     /// Test01
     /// </summary>
-    /// <see href="https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/"/>
+    /// <see href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm"/>
     [TestClass]
-    public partial class Tests20200627_Wikipedia_Pic01_Drawing
+    public partial class Tests20200701_Wikipedia_Dijkstra
     {
         [Test]
         public void GraphCreate()
@@ -147,15 +147,6 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
 
 
             Graph g = new Graph();
-            g.Nodes = new List<Node>()
-            {
-                n1,
-                n2,
-                n3,
-                n4,
-                n5,
-                n6,
-            };
 
             return;
         }
