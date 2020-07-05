@@ -9,5 +9,9 @@
     <PackageReference Include="NETStandard.Library" Version="2.0.3" />
     <PackageReference Include="System.ValueTuple" Version="4.5.0" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\externals\submodules\Matrix\source\HolisticWare.Core.Math.Matrix.netstandard10\HolisticWare.Core.Math.Matrix.netstandard10.csproj" />
+  </ItemGroup>
   <Import Project="..\HolisticWare.Core.Math.Discrete.GraphTheory.netstandard10-shared\HolisticWare.Core.Math.Discrete.GraphTheory.netstandard10-shared.projitems" Label="Shared" Condition="Exists('..\HolisticWare.Core.Math.Discrete.GraphTheory.netstandard10-shared\HolisticWare.Core.Math.Discrete.GraphTheory.netstandard10-shared.projitems')" />
 </Project>
