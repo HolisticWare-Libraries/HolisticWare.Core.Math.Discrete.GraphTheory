@@ -12,6 +12,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)HolisticWare.BenchmarkTests\BenchmarkTests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)HolisticWare.UnitTests.Portability\SetUpFixture.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)HolisticWare.UnitTests.Portability\UnitTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Tests20200701_Wikipedia.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)HolisticWare.BenchmarkTests\" />
