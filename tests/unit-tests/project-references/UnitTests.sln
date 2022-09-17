@@ -15,13 +15,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "netstandard10", "netstandar
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "netstandard11", "netstandard11", "{E6C82F31-6175-4419-8764-5BC669C1F69A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests.MSTest.netstandard1.0", "netstandard10\UnitTests.MSTest\UnitTests.MSTest.netstandard1.0.csproj", "{ED0C66AC-EAE7-4CD0-BF81-DF5D8D3B2E58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests.MSTest", "netstandard10\UnitTests.MSTest\UnitTests.MSTest.csproj", "{ED0C66AC-EAE7-4CD0-BF81-DF5D8D3B2E58}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests.XUnit.netstandard1.0", "netstandard10\UnitTests.XUnit\UnitTests.XUnit.netstandard1.0.csproj", "{20720034-0C48-47D1-9B31-743088366300}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests.XUnit", "netstandard10\UnitTests.XUnit\UnitTests.XUnit.csproj", "{20720034-0C48-47D1-9B31-743088366300}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests.NUnit.XamarinIOS.netstandard1.0", "netstandard10\UnitTests.NUnit.XamarinIOS\UnitTests.NUnit.XamarinIOS.netstandard1.0.csproj", "{454143FE-45E8-48CE-AE04-71BFB0B413DB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests.NUnit.XamarinIOS", "netstandard10\UnitTests.NUnit.XamarinIOS\UnitTests.NUnit.XamarinIOS.csproj", "{454143FE-45E8-48CE-AE04-71BFB0B413DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests.NUnit.netstandard1.0", "netstandard10\UnitTests.NUnit\UnitTests.NUnit.netstandard1.0.csproj", "{DD4AC4FC-52B0-49F2-85DE-6E6C441F5207}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests.NUnit", "netstandard10\UnitTests.NUnit\UnitTests.NUnit.csproj", "{DD4AC4FC-52B0-49F2-85DE-6E6C441F5207}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{4F8C1E03-F782-4A67-B68E-64E9246E28D4}"
 EndProject

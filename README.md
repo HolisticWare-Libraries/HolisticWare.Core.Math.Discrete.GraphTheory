@@ -146,3 +146,18 @@ HolisticWare.Core.Math.Discrete.GraphTheory
 *   https://medium.com/better-programming/graph-theory-algorithms-simplified-9a6868cc222
 
 *   https://medium.com/swlh/vanilla-search-techniques-on-graphs-dfs-and-bfs-c5cff5d0937d
+
+*   https://en.wikipedia.org/wiki/Mathematical_operators_and_symbols_in_Unicode
+
+## Graphs
+
+
+### Tree
+
+*   https://stackoverflow.com/questions/66893/tree-data-structure-in-c-sharp
+
+*   https://docs.microsoft.com/en-us/previous-versions/ms379574(v=vs.80)?redirectedfrom=MSDN
+
+
+
+
