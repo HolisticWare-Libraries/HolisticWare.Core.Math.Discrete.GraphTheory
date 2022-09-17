@@ -1,6 +1,7 @@
 
 //---------------------------------------------------------------------------------------
 Task("nuget-pack")
+    .IsDependentOn ("libs")
     .Does
     (
         () =>
@@ -36,16 +37,6 @@ Task("nuget-pack")
 					}
 				);
 			}
-			MSBuild
-			(
-				"./source/Xamarin.Grpc.Protobuf.Lite.Bindings.XamarinAndroid/Xamarin.Grpc.Protobuf.Lite.Bindings.XamarinAndroid.csproj", 
-				configuration => 
-					configuration
-						.SetConfiguration("Release")
-						.WithTarget("Pack")
-						.WithProperty("PackageVersion", NUGET_VERSION)
-						.WithProperty("PackageOutputPath", "../../output")
-			);
 
             return;
         }
