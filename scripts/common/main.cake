@@ -1,4 +1,15 @@
 // #addin nuget:?package=System.Threading.Tasks&version=4.3.0
+string[] folder_patterns = new string[]
+{
+    "./externals/",
+    "./source/**/bin/",
+    "./source/**/obj/",
+};
+
+string[] file_patterns = new string[]
+{
+    "./**/*.binlog",
+};
 
 //---------------------------------------------------------------------------------------
 Task ("clean")
@@ -48,7 +59,6 @@ Task ("clean-files")
     (
         () =>
         {
-            foreach(string file in clean_file_patterns)
             {
                 FilePathCollection files = GetFiles(file);
                 foreach(FilePath fp in files)

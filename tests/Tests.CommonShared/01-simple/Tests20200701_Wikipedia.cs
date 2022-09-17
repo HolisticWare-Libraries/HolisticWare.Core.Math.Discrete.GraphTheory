@@ -143,7 +143,7 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
             };
 
             Console_WriteLine($" Edge e1 = {e1.ToString()}");
-            Console_WriteLine($" Edge e2 = {e2.ToString()}");
+            Console_WriteLine($" Edge e2  = {e2.ToString()}");
 
 
             Graph g = new Graph();
