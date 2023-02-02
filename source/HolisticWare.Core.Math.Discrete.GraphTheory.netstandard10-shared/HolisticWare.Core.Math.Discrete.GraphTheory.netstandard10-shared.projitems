@@ -18,9 +18,14 @@
     <Compile Include="$(MSBuildThisFileDirectory)Graphs\GraphElement.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Graphs\Path.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Graphs\Cycle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphs\EdgeBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphs\NodeBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphs\GraphBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Graphs\" />
     <Folder Include="$(MSBuildThisFileDirectory)Networks\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Graphs\UnDirected\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Graphs\Directed\" />
   </ItemGroup>
 </Project>

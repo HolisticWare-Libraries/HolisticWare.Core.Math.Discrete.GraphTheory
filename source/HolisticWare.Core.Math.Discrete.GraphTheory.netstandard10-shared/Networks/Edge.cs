@@ -1,4 +1,4 @@
-﻿namespace Core.Math.Discrete.GraphTheory
+﻿namespace Core.Math.Discrete.GraphTheory.Netowrks
 {
     public partial class Edge<EdgeType, NodeType>
     {

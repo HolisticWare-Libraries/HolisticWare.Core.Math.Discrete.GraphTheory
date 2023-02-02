@@ -6,19 +6,44 @@ namespace Core.Math.Discrete.GraphTheory.Graphs
     /// Edge, Arc
     /// </summary>
     /// <see cref="https://en.wikipedia.org/wiki/Graph_theory"/>
-    public partial class Edge : GraphElement
+    public partial class
+                                        Edge<EdgeType, NodeType>
+                                            :
+                                        EdgeBase
     {
-        public Edge(Node begin, Node end)
+        public
+                                        Edge
+                                            (
+                                                Node<NodeType> begin,
+                                                Node<NodeType> end
+                                            )
         {
         }
 
-        public (Node first, Node second) Tuple
+        public
+            NodeType
+                                        Weight
         {
             get;
             set;
         }
 
-        public override string ToString()
+        public
+            (
+                Node<NodeType> first,
+                Node<NodeType> second
+            )
+                                        Tuple
+        {
+            get;
+            set;
+        }
+
+        public override
+            string
+                                        ToString
+                                            (
+                                            )
         {
             string s = "Edge";
 

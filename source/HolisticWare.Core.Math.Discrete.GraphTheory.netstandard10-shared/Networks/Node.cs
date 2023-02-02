@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Core.Math.Discrete.GraphTheory
+namespace Core.Math.Discrete.GraphTheory.Netowrks
 {
     public partial class Node<T>
     {

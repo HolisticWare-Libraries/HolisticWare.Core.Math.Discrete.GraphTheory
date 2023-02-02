@@ -3,40 +3,38 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30128.36
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolisticWare.Core.Math.Discrete.GraphTheory.netstandard10", "HolisticWare.Core.Math.Discrete.GraphTheory.netstandard10\HolisticWare.Core.Math.Discrete.GraphTheory.netstandard10.csproj", "{7F881378-22A2-4DC5-BF63-700AD920A6F0}"
+EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "HolisticWare.Core.Math.Discrete.GraphTheory.netstandard10-shared", "HolisticWare.Core.Math.Discrete.GraphTheory.netstandard10-shared\HolisticWare.Core.Math.Discrete.GraphTheory.netstandard10-shared.shproj", "{C0839C83-7725-420D-B39A-6B5E5FBF7162}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HolisticWare.Core.Math.Discrete.GraphTheory.netstandard10", "HolisticWare.Core.Math.Discrete.GraphTheory.netstandard10\HolisticWare.Core.Math.Discrete.GraphTheory.netstandard10.csproj", "{CDC7DE6B-9222-4A55-A729-D8AF6B3BE54A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "externals-submodules", "externals-submodules", "{586CC61E-BED1-47E3-9356-867274AA6A3A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "externals", "externals", "{12E663BA-5E43-447E-B961-798014CA0178}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolisticWare.Core.Math.Matrix.netstandard10", "..\externals-submodules\Core.Math.Matrix\source\HolisticWare.Core.Math.Matrix.netstandard10\HolisticWare.Core.Math.Matrix.netstandard10.csproj", "{AE0E3F8E-250E-45DB-B52F-59F690E9FF02}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HolisticWare.Core.Math.Matrix.netstandard10", "..\externals\submodules\Matrix\source\HolisticWare.Core.Math.Matrix.netstandard10\HolisticWare.Core.Math.Matrix.netstandard10.csproj", "{65630064-C91E-4138-B336-7857D9E43AB5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1FAE55E9-50F3-4986-B00D-A4B01030B9DC}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core.Math.Matrix", "Core.Math.Matrix", "{04669C16-5F58-41F9-B8B4-F5724BC7DC1C}"
 EndProject
 Global
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		HolisticWare.Core.Math.Discrete.GraphTheory.netstandard10-shared\HolisticWare.Core.Math.Discrete.GraphTheory.netstandard10-shared.projitems*{c0839c83-7725-420d-b39a-6b5e5fbf7162}*SharedItemsImports = 13
-		HolisticWare.Core.Math.Discrete.GraphTheory.netstandard10-shared\HolisticWare.Core.Math.Discrete.GraphTheory.netstandard10-shared.projitems*{cdc7de6b-9222-4a55-a729-d8af6b3be54a}*SharedItemsImports = 5
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CDC7DE6B-9222-4A55-A729-D8AF6B3BE54A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CDC7DE6B-9222-4A55-A729-D8AF6B3BE54A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CDC7DE6B-9222-4A55-A729-D8AF6B3BE54A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CDC7DE6B-9222-4A55-A729-D8AF6B3BE54A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{65630064-C91E-4138-B336-7857D9E43AB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{65630064-C91E-4138-B336-7857D9E43AB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{65630064-C91E-4138-B336-7857D9E43AB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{65630064-C91E-4138-B336-7857D9E43AB5}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
+		{7F881378-22A2-4DC5-BF63-700AD920A6F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F881378-22A2-4DC5-BF63-700AD920A6F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F881378-22A2-4DC5-BF63-700AD920A6F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F881378-22A2-4DC5-BF63-700AD920A6F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE0E3F8E-250E-45DB-B52F-59F690E9FF02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE0E3F8E-250E-45DB-B52F-59F690E9FF02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE0E3F8E-250E-45DB-B52F-59F690E9FF02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE0E3F8E-250E-45DB-B52F-59F690E9FF02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{65630064-C91E-4138-B336-7857D9E43AB5} = {12E663BA-5E43-447E-B961-798014CA0178}
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {CE5CCFDF-33A3-46FB-A1A2-C1316906F354}
+		{04669C16-5F58-41F9-B8B4-F5724BC7DC1C} = {586CC61E-BED1-47E3-9356-867274AA6A3A}
+		{AE0E3F8E-250E-45DB-B52F-59F690E9FF02} = {04669C16-5F58-41F9-B8B4-F5724BC7DC1C}
 	EndGlobalSection
 EndGlobal

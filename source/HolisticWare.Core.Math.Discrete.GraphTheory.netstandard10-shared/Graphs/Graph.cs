@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace Core.Math.Discrete.GraphTheory.Graphs
 {
@@ -8,19 +9,31 @@ namespace Core.Math.Discrete.GraphTheory.Graphs
     /// is mathematical structure used to model pairwise relations between objects.
     /// Consists of
     ///     Nodes (Vertices, Points) and
-    ///     Edges (Arcs, Links, or Lines)
+    ///     Edges (Arcs, Links, Lines or Connections)
     /// </summary>
-    public partial class Graph
+    /// <see href="https://en.wikipedia.org/wiki/Graph_theory" />
+    /// <see href="https://en.wikipedia.org/wiki/Graph_(abstract_data_type)"/>
+    public partial class
+                                        Graph<NodeType, EdgeType>
+                                        :
+                                        GraphBase
     {
-        public Graph()
+        public
+                                        Graph
+                                        (
+                                        )
         {
-            nodes = new HashSet<Node>();
-            edges = new HashSet<Edge>();
+            nodes = new HashSet<Node<NodeType>>();
+            edges = new HashSet<Edge<EdgeType, NodeType>>();
+
+            ToStringDelegate = ToString;
+
+            return;
         }
 
-        HashSet<Node> nodes;
+        HashSet<Node<NodeType>> nodes;
 
-        public HashSet<Node> Nodes
+        public HashSet<Node<NodeType>> Nodes
         {
             get
             {
@@ -28,9 +41,11 @@ namespace Core.Math.Discrete.GraphTheory.Graphs
             }
         }
 
-        HashSet<Edge> edges;
+        HashSet<Edge<EdgeType, NodeType>> edges;
 
-        public HashSet<Edge> Edges
+        public
+            HashSet<Edge<EdgeType, NodeType>>
+                                        Edges
         {
             get
             {
@@ -38,45 +53,102 @@ namespace Core.Math.Discrete.GraphTheory.Graphs
             }
         }
 
-        public void Add(Node n)
+        public
+            void
+                                        Add
+                                        (
+                                            Node<NodeType> n
+                                        )
         {
-            nodes.Add(n);
+            if (!nodes.Contains(n))
+            {
+                nodes.Add(n);
+            }
 
             return;
         }
 
-        public void Remove(Node n)
+        public
+            void
+                                        Add
+                                        (
+                                            Edge<EdgeType, NodeType> e
+                                        )
+        {
+            if (!edges.Contains(e))
+            {
+                edges.Add(e);
+            }
+
+            return;
+        }
+
+        public
+            void
+                                        Remove
+                                        (
+                                            Node<NodeType> n
+                                        )
         {
             nodes.Remove(n);
             edges.RemoveWhere
-                    (
-                        (Edge e) =>
-                        {
-                            return (e.Tuple.first == n || e.Tuple.second == n);
-                        }
-                    );
-            return;
-        }
-
-        public void Add(Edge e)
-        {
-            edges.Add(e);
+                        (
+                            (Edge<EdgeType, NodeType> e) =>
+                            {
+                                return (e.Tuple.first == n || e.Tuple.second == n);
+                            }
+                        );
 
             return;
         }
 
-        public void Remove(Edge e)
+        public
+            void
+                                        Remove
+                                        (
+                                            Edge<EdgeType, NodeType> e
+                                        )
         {
             edges.Remove(e);
 
             return;
-
         }
 
 
-        public override string ToString()
+        public override
+            string
+                                        ToString
+                                        (
+                                        )
         {
-            return base.ToString();
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine(base.ToString());
+
+            sb.AppendLine($"Nodes");
+            sb.AppendLine($"  count = {nodes.Count}");
+
+            foreach (Node<NodeType> n in nodes)
+            {
+                sb.AppendLine($"    Node");
+                sb.AppendLine($"      NodeType = {typeof(NodeType)}");
+                sb.AppendLine($"      Label    = {n.Label}");
+            }
+
+            sb.AppendLine("Edges");
+            sb.AppendLine($"  count = {nodes.Count}");
+            foreach (Edge<EdgeType, NodeType> e in edges)
+            {
+                sb.AppendLine($"    Node");
+                sb.AppendLine($"      EdgeType = {typeof(EdgeType)}");
+                sb.AppendLine($"      NodeType = {typeof(NodeType)}");
+                sb.AppendLine($"      Label    = {e.Label}");
+            }
+
+            return sb.ToString();
         }
+
+        public
+            Func<string>
+                                        ToStringDelegate;
     }
 }
