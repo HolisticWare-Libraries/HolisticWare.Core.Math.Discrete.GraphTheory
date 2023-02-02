@@ -67,6 +67,7 @@ using System.Diagnostics;
 using System.Collections.ObjectModel;
 
 using Core.Math.Discrete.GraphTheory.Graphs;
+using Core.Math.Discrete.GraphTheory;
 
 namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
 {
@@ -81,7 +82,7 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
         [Test]
         public void T011_Nodes_Define()
         {
-            Node n01 = new Node();
+            Node<string> n01 = new Node<string>();
 
             return;
         }
@@ -97,7 +98,7 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
         [Test]
         public void T013_Graph_Define()
         {
-            Graph g01 = new Graph();
+            Graph<string, string> g01 = new Graph<string, string>();
 
             return;
         }
@@ -105,7 +106,7 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
         [Test]
         public void GraphCreate()
         {
-            Graph g = new Graph();
+            Graph<string, string> g = new Graph<string, string>();
 
             return;
         }
@@ -113,7 +114,7 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
         [Test]
         public void MatrixAjdacency()
         {
-            Graph g = new Graph();
+            Graph<string, string> g = new Graph<string, string>();
 
             return;
         }
@@ -121,7 +122,7 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
         [Test]
         public void ListAjdacency()
         {
-            Graph g = new Graph();
+            Graph<string, string> g = new Graph<string, string>();
 
             return;
         }
@@ -129,7 +130,7 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
         [Test]
         public void SearchDepthFirst()
         {
-            Graph g = new Graph();
+            Graph<string, string> g = new Graph<string, string>();
 
             return;
         }
@@ -137,7 +138,7 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
         [Test]
         public void SearchBreadthFirst()
         {
-            Graph g = new Graph();
+            Graph<string, string> g = new Graph<string, string>();
 
             return;
         }
@@ -145,7 +146,7 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
         [Test]
         public void ConnectedComponents()
         {
-            Graph g = new Graph();
+            Graph<string, string> g = new Graph<string, string>();
 
             return;
         }
@@ -153,7 +154,7 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
         [Test]
         public void Cycles()
         {
-            Graph g = new Graph();
+            Graph<string, string> g = new Graph<string, string>();
 
             return;
         }
@@ -161,7 +162,7 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
         [Test]
         public void Cuts()
         {
-            Graph g = new Graph();
+            Graph<string, string> g = new Graph<string, string>();
 
             return;
         }
@@ -169,7 +170,7 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
         [Test]
         public void MinimumSpanningTrees()
         {
-            Graph g = new Graph();
+            Graph<string, string> g = new Graph<string, string>();
 
             return;
         }
@@ -177,7 +178,7 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
         [Test]
         public void Complete()
         {
-            Graph g = new Graph();
+            Graph<string, string> g = new Graph<string, string>();
 
             return;
         }
@@ -185,7 +186,7 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
         [Test]
         public void Complements()
         {
-            Graph g = new Graph();
+            Graph<string, string> g = new Graph<string, string>();
 
             return;
         }
@@ -193,7 +194,7 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
         [Test]
         public void Degree()
         {
-            Graph g = new Graph();
+            Graph<string, string> g = new Graph<string, string>();
 
             return;
         }
@@ -201,7 +202,7 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
         [Test]
         public void Walk()
         {
-            Graph g = new Graph();
+            Graph<string, string> g = new Graph<string, string>();
 
             return;
         }
@@ -209,7 +210,7 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
         [Test]
         public void Trail()
         {
-            Graph g = new Graph();
+            Graph<string, string> g = new Graph<string, string>();
 
             return;
         }
@@ -217,7 +218,7 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
         [Test]
         public void Path()
         {
-            Graph g = new Graph();
+            Graph<string, string> g = new Graph<string, string>();
 
             return;
         }
@@ -225,7 +226,7 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
         [Test]
         public void Circuit()
         {
-            Graph g = new Graph();
+            Graph<string, string> g = new Graph<string, string>();
 
             return;
         }
@@ -233,7 +234,7 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
         [Test]
         public void Connectivity()
         {
-            Graph g = new Graph();
+            Graph<string, string> g = new Graph<string, string>();
 
             return;
         }
@@ -241,7 +242,7 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
         [Test]
         public void Components()
         {
-            Graph g = new Graph();
+            Graph<string, string> g = new Graph<string, string>();
 
             return;
         }

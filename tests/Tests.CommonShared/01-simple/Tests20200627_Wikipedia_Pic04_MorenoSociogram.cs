@@ -80,7 +80,7 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
         [Test]
         public void GraphCreate()
         {
-            Graph g = new Graph();
+            Graph<string, string> g = new Graph<string, string>();
 
             return;
         }

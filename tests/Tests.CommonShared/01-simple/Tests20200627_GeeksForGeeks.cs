@@ -78,11 +78,11 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
     [TestClass]
     public partial class Tests20200627_Test01_GeeksForGeeks
     {
-        Node n0 = new Node();
-        Node n1 = new Node();
-        Node n2 = new Node();
-        Node n3 = new Node();
-        Node n4 = new Node();
+        Node<string> n0 = new Node<string>();
+        Node<string> n1 = new Node<string>();
+        Node<string> n2 = new Node<string>();
+        Node<string> n3 = new Node<string>();
+        Node<string> n4 = new Node<string>();
 
         [Test]
         public void T011_Nodes_Define()
@@ -96,24 +96,24 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
             return;
         }
 
-        Edge e04;
-        Edge e01;
-        Edge e14;
-        Edge e43;
-        Edge e13;
-        Edge e12;
-        Edge e32;
+        Edge<string, string> e04;
+        Edge<string, string> e01;
+        Edge<string, string> e14;
+        Edge<string, string> e43;
+        Edge<string, string> e13;
+        Edge<string, string> e12;
+        Edge<string, string> e32;
 
         [Test]
         public void T012_Edges_Define()
         {
-            e04 = new Edge(n0, n4);
-            e01 = new Edge(n0, n1);
-            e14 = new Edge(n1, n4);
-            e43 = new Edge(n4, n3);
-            e13 = new Edge(n1, n3);
-            e12 = new Edge(n1, n2);
-            e32 = new Edge(n3, n2);
+            e04 = new Edge<string, string>(n0, n4);
+            e01 = new Edge<string, string>(n0, n1);
+            e14 = new Edge<string, string>(n1, n4);
+            e43 = new Edge<string, string>(n4, n3);
+            e13 = new Edge<string, string>(n1, n3);
+            e12 = new Edge<string, string>(n1, n2);
+            e32 = new Edge<string, string>(n3, n2);
 
             e04.Label = "0 - 4";
             e01.Label = "0 - 1";
@@ -136,7 +136,7 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
             T011_Nodes_Define();
             T012_Edges_Define();
 
-            Graph g = new Graph();
+            Graph<string, string> g = new Graph<string, string>();
 
             g.Add(n0);
             g.Add(n1);

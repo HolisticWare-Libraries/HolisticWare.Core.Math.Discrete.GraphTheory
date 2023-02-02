@@ -57,7 +57,8 @@ using BenchmarkDotNet.Running;
 using BenchmarkDotNet.Configs;
 using BenchmarkDotNet.Attributes.Jobs;
 #else
-using Benchmark = HolisticWare.Core.Testing.BenchmarkTests.Benchmark;using ShortRunJob = HolisticWare.Core.Testing.BenchmarkTests.ShortRunJob;
+using Benchmark = HolisticWare.Core.Testing.BenchmarkTests.Benchmark;
+using ShortRunJob = HolisticWare.Core.Testing.BenchmarkTests.ShortRunJob;
 #endif
 
 using System;
@@ -81,72 +82,89 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
         public void GraphCreate()
         {
             // create object
-            Node    n1 = new Node();
-                    // modify property
-                    n1.Label = "1";
+            Node<int>   n1 = new Node<int>();
+                        // modify property
+                        n1.Label = "1";
 
             // create object
-            Node n2 = new Node();
-                    // modify property
-                    n2.Label = 2.ToString();
+            Node<int> n2 = new Node<int>();
+                        // modify property
+                        n2.Label = 2.ToString();
 
             // create object with initializer
-            Node n3 = new Node()
-                            {
-                                Label = "3"
-                            };
-            Node n4 = new Node()
-                            {
-                                Label = "4"
-                            };
-            Node n5 = new Node()
-                            {
-                                Label = "5"
-                            };
-            Node n6 = new Node()
-                            {
-                                Label = "6"
-                            };
+            Node<int> n3 = new Node<int>()
+                                {
+                                    Label = "3"
+                                };
+            Node<int> n4 = new Node<int>()
+                                {
+                                    Label = "4"
+                                };
+            Node<int> n5 = new Node<int>()
+                                {
+                                    Label = "5"
+                                };
+            Node<int> n6 = new Node<int>()
+                                {
+                                    Label = "6"
+                                };
 
             //Console.WriteLine($" Node n1 = {n1.ToString()}");
             //Console.WriteLine($" Node n2 = {n2.ToString()}");
 
             // declaration
-            Edge e1;
+            Edge<string, int> e1;
             // definition
-            e1 = new Edge(n6, n4);
+            e1 = new Edge<string, int>(n6, n4);
             e1.Label = "n6, n4";
 
-            Edge e2 = new Edge(n4, n3)
-            {
-                Label = "n4, n3"
-            };
-            Edge e3 = new Edge(n4, n5)
-            {
-                Label = "n4, n5"
-            };
-            Edge e4 = new Edge(n2, n3)
-            {
-                Label = "n2, n3"
-            };
-            Edge e5 = new Edge(n5, n2)
-            {
-                Label = "n5, n2"
-            };
-            Edge e6 = new Edge(n2, n1)
-            {
-                Label = "n2, n1"
-            };
-            Edge e7 = new Edge(n5, n1)
-            {
-                Label = "n5, n1"
-            };
+            Edge<string, int> e2 = new Edge<string, int>(n4, n3)
+                                            {
+                                                Label = "n4, n3"
+                                            };
+            Edge<string, int> e3 = new Edge<string, int>(n4, n5)
+                                            {
+                                                Label = "n4, n5"
+                                            };
+            Edge<string, int> e4 = new Edge<string, int>(n2, n3)
+                                            {
+                                                Label = "n2, n3"
+                                            };
+            Edge<string, int> e5 = new Edge<string, int>(n5, n2)
+                                            {
+                                                Label = "n5, n2"
+                                            };
+            Edge<string, int> e6 = new Edge<string, int>(n2, n1)
+                                            {
+                                                Label = "n2, n1"
+                                            };
+            Edge<string, int> e7 = new Edge<string, int>(n5, n1)
+                                            {
+                                                Label = "n5, n1"
+                                            };
 
-            Console_WriteLine($" Edge e1 = {e1.ToString()}");
-            Console_WriteLine($" Edge e2 = {e2.ToString()}");
+            Console_WriteLine($" Edge<string, int> e1 = {e1.ToString()}");
+            Console_WriteLine($" Edge<string, int> e2 = {e2.ToString()}");
 
 
-            Graph g = new Graph();
+            Graph<int, string> g = new Graph<int, string>();
+
+            g.Add(n1);
+            g.Add(n2);
+            g.Add(n3);
+            g.Add(n4);
+            g.Add(n5);
+            g.Add(n6);
+
+            g.Add(e1);
+            g.Add(e2);
+            g.Add(e3);
+            g.Add(e4);
+            g.Add(e5);
+            g.Add(e6);
+            g.Add(e7);
+
+            Console_WriteLine($" {g.ToString()}");
 
             return;
         }
