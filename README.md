@@ -40,7 +40,21 @@ HolisticWare.Core.Math.Discrete.GraphTheory
 
         *   Depth First
 
+## Generic Math
 
+*   https://learn.microsoft.com/en-us/dotnet/standard/generics/math
+
+*   blogs
+
+    *   https://devblogs.microsoft.com/dotnet/dotnet-7-generic-math/
+
+    *   https://devblogs.microsoft.com/dotnet/preview-features-in-net-6-generic-math/
+
+    *   https://dunnhq.com/posts/2021/generic-math/
+
+*   `net6.0`
+
+    *   https://learn.microsoft.com/en-us/dotnet/standard/net-standard
 
 ## References / Links
 
