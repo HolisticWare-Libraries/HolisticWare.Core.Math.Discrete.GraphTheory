@@ -105,7 +105,7 @@
     <Compile Include="UnitTestAppDelegate.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\source\HolisticWare.Core.Math.Discrete.GraphTheory.netstandard10\HolisticWare.Core.Math.Discrete.GraphTheory.netstandard10.csproj">
+    <ProjectReference Include="..\..\..\..\..\source\HolisticWare.Core.Math.Discrete.GraphTheory\HolisticWare.Core.Math.Discrete.GraphTheory.csproj">
       <Project>{98911700-A5AC-4DC9-AC37-09A24234C09A}</Project>
       <Name>HolisticWare.Core.Math.Discrete.GraphTheory.netstandard10</Name>
     </ProjectReference>
