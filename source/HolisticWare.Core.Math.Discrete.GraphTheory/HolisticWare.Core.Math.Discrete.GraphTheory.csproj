@@ -15,34 +15,34 @@
         If moved to separate PropertyGroup - UI is cleared?!?!
         -->
         <PackOnBuild>true</PackOnBuild>
-        <PackageId>HolisticWare.Xamarin.Tools.GitHub</PackageId>
+        <PackageId>HolisticWare.$(RootNamespace)</PackageId>
         <Title>
-            HolisticWare.Xamarin.Tools.GitHub
+            HolisticWare.$(RootNamespace)
         </Title>
         <summary>
-            GitHub client API. Tools for GitHub client API for bindings productivity.
+            HolisticWare.$(RootNamespace) Graph Theory library for .NET and implemented in C#
         </summary>
         <Description>
-            GitHub client API. Tools for GitHub client API for bindings productivity.
+            HolisticWare.$(RootNamespace) Graph Theory library for .NET and implemented in C#
         </Description>
         <Owners>HolisticWare, moljac</Owners>
         <Authors>HolisticWare, moljac</Authors>
-        <Copyright>2020</Copyright>
+        <Copyright>2023</Copyright>
         <ProjectUrl>
-            https://github.com/HolisticWare-Xamarin-Tools/HolisticWare.Xamarin.Tools.Bindings.XamarinAndroid.FassBinderMeister
+            https://github.com/HolisticWare/HolisticWare.Core.Math.Discrete.GraphTheory
         </ProjectUrl>
         <PackageProjectUrl>
-            https://github.com/HolisticWare-Xamarin-Tools/HolisticWare.Xamarin.Tools.Bindings.XamarinAndroid.FassBinderMeister
+            https://github.com/HolisticWare/HolisticWare.Core.Math.Discrete.GraphTheory
         </PackageProjectUrl>
         <RepositoryUrl>
-            https://github.com/HolisticWare-Xamarin-Tools/HolisticWare.Xamarin.Tools.Bindings.XamarinAndroid.FassBinderMeister
+            https://github.com/HolisticWare/HolisticWare.Core.Math.Discrete.GraphTheory
         </RepositoryUrl>
         <license>LICENSE</license>
         <licenseUrl>
-            https://github.com/HolisticWare-Xamarin-Tools/HolisticWare.Xamarin.Tools.Bindings.XamarinAndroid.FassBinderMeister/blob/master/LICENSE
+            https://github.com/HolisticWare/HolisticWare.Core.Math.Discrete.GraphTheory/blob/master/LICENSE
         </licenseUrl>
         <PackageLicenseUrl>
-            https://github.com/HolisticWare-Xamarin-Tools/HolisticWare.Xamarin.Tools.Bindings.XamarinAndroid.FassBinderMeister/blob/master/LICENSE
+            https://github.com/HolisticWare/HolisticWare.Core.Math.Discrete.GraphTheory/blob/master/LICENSE
         </PackageLicenseUrl>
         <iconUrl>
             https://secure.gravatar.com/avatar/b662959e712466f393541935b664d3c5
