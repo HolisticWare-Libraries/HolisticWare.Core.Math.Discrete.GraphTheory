@@ -1,0 +1,74 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard1.0</TargetFramework>
+        <!--
+        <DefaultItemExcludes>$(DefaultItemExcludes);.DS_Store</DefaultItemExcludes>
+        <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+        -->
+        <RootNamespace>Core.Math.Discrete.GraphTheory</RootNamespace>
+        <AssemblyName>HolisticWare.$(RootNamespace)</AssemblyName>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <!--
+        If moved to separate PropertyGroup - UI is cleared?!?!
+        -->
+        <PackOnBuild>true</PackOnBuild>
+        <PackageId>HolisticWare.Xamarin.Tools.GitHub</PackageId>
+        <Title>
+            HolisticWare.Xamarin.Tools.GitHub
+        </Title>
+        <summary>
+            GitHub client API. Tools for GitHub client API for bindings productivity.
+        </summary>
+        <Description>
+            GitHub client API. Tools for GitHub client API for bindings productivity.
+        </Description>
+        <Owners>HolisticWare, moljac</Owners>
+        <Authors>HolisticWare, moljac</Authors>
+        <Copyright>2020</Copyright>
+        <ProjectUrl>
+            https://github.com/HolisticWare-Xamarin-Tools/HolisticWare.Xamarin.Tools.Bindings.XamarinAndroid.FassBinderMeister
+        </ProjectUrl>
+        <PackageProjectUrl>
+            https://github.com/HolisticWare-Xamarin-Tools/HolisticWare.Xamarin.Tools.Bindings.XamarinAndroid.FassBinderMeister
+        </PackageProjectUrl>
+        <RepositoryUrl>
+            https://github.com/HolisticWare-Xamarin-Tools/HolisticWare.Xamarin.Tools.Bindings.XamarinAndroid.FassBinderMeister
+        </RepositoryUrl>
+        <license>LICENSE</license>
+        <licenseUrl>
+            https://github.com/HolisticWare-Xamarin-Tools/HolisticWare.Xamarin.Tools.Bindings.XamarinAndroid.FassBinderMeister/blob/master/LICENSE
+        </licenseUrl>
+        <PackageLicenseUrl>
+            https://github.com/HolisticWare-Xamarin-Tools/HolisticWare.Xamarin.Tools.Bindings.XamarinAndroid.FassBinderMeister/blob/master/LICENSE
+        </PackageLicenseUrl>
+        <iconUrl>
+            https://secure.gravatar.com/avatar/b662959e712466f393541935b664d3c5
+        </iconUrl>
+        <PackageIconUrl>
+            https://secure.gravatar.com/avatar/b662959e712466f393541935b664d3c5        
+        </PackageIconUrl>
+        <VersionPrefix>0.0.1</VersionPrefix>
+        <!--
+        VersionSuffix - For debugging and local GitHub feed
+        -->
+        <VersionSuffix>alpha-$([System.DateTime]::Now.ToString('yyyyMMddHHmm'))</VersionSuffix>
+        <PackageVersion>$(Version)</PackageVersion>
+        <!--
+        put the package output into a GitHub test folder
+        -->
+        <PackageOutputPath>../../output</PackageOutputPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="System.ValueTuple" Version="4.5.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\externals-submodules\Core.Math.Matrix\source\HolisticWare.Core.Math.Matrix.netstandard10\HolisticWare.Core.Math.Matrix.netstandard10.csproj" />
+    </ItemGroup>
+    <Import Project="..\HolisticWare.Core.Math.Discrete.GraphTheory.shared\HolisticWare.Core.Math.Discrete.GraphTheory.shared.projitems" Label="Shared" Condition="Exists('..\HolisticWare.Core.Math.Discrete.GraphTheory.netstandard10-shared\HolisticWare.Core.Math.Discrete.GraphTheory.netstandard10-shared.projitems')" />
+
+</Project>
