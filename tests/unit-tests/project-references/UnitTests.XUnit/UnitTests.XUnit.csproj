@@ -31,7 +31,7 @@
     <None Remove=".DS_Store" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\source\HolisticWare.Core.Math.Discrete.GraphTheory\HolisticWare.Core.Math.Discrete.GraphTheory.csproj" />
+    <ProjectReference Include="..\..\..\..\source\HolisticWare.Core.Math.Discrete.GraphTheory\HolisticWare.Core.Math.Discrete.GraphTheory.csproj" />
   </ItemGroup>
   <Choose>
     <When Condition="! exists('..\..\..\..\source\HolisticWare.Core.Math.Statistics.Descriptive.Sequential.NetStandard10\HolisticWare.Core.Math.Statistics.Descriptive.Sequential.NetStandard10.csproj')">
@@ -50,6 +50,5 @@
   ==================================================================================================
   -->
 
-  <Import Project="..\..\..\UnitTests.Common.Utils.Shared\UnitTests.Common.Utils.Shared.projitems" Label="Shared" Condition="Exists('..\..\..\UnitTests.Common.Utils.Shared\UnitTests.Common.Utils.Shared.projitems')" />
-  <Import Project="..\..\..\..\Tests.CommonShared\Tests.CommonShared.projitems" Label="Shared" Condition="Exists('..\..\..\..\Tests.CommonShared\Tests.CommonShared.projitems')" />
+  <Import Project="..\..\..\Tests.CommonShared\Tests.CommonShared.projitems" Label="Shared" Condition="Exists('..\..\..\Tests.CommonShared\Tests.CommonShared.projitems')" />
 </Project>

@@ -20,13 +20,13 @@
     <PackageReference Include="Nito.AsyncEx.Context" Version="5.1.2" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\source\HolisticWare.Core.Math.Discrete.GraphTheory\HolisticWare.Core.Math.Discrete.GraphTheory.csproj" />
+    <ProjectReference Include="..\..\..\..\source\HolisticWare.Core.Math.Discrete.GraphTheory\HolisticWare.Core.Math.Discrete.GraphTheory.csproj" />
   </ItemGroup>
 
   <!--
   If projects for references can be found use ProjectReferences otherwise use NuGet references
   ==================================================================================================
   -->
-  <Import Project="..\..\..\UnitTests.Common.Utils.Shared\UnitTests.Common.Utils.Shared.projitems" Label="Shared" Condition="Exists('..\..\..\UnitTests.Common.Utils.Shared\UnitTests.Common.Utils.Shared.projitems')" />
-  <Import Project="..\..\..\..\Tests.CommonShared\Tests.CommonShared.projitems" Label="Shared" Condition="Exists('..\..\..\..\Tests.CommonShared\Tests.CommonShared.projitems')" />
+  <Import Project="..\..\UnitTests.Common.Utils.Shared\UnitTests.Common.Utils.Shared.projitems" Label="Shared" Condition="Exists('..\..\UnitTests.Common.Utils.Shared\UnitTests.Common.Utils.Shared.projitems')" />
+  <Import Project="..\..\..\Tests.CommonShared\Tests.CommonShared.projitems" Label="Shared" Condition="Exists('..\..\..\Tests.CommonShared\Tests.CommonShared.projitems')" />
 </Project>
