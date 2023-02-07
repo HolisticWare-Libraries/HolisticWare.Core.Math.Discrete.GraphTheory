@@ -69,14 +69,14 @@ using System.Collections.ObjectModel;
 
 using Core.Math.Discrete.GraphTheory.Graphs;
 
-namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
+namespace UnitTests.SamplesFromWeb
 {
     /// <summary>
     /// Test01
     /// </summary>
     /// <see href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm"/>
     [TestClass]
-    public partial class Tests20200701_Wikipedia_AStarSearch
+    public partial class Tests20200701_Wikipedia_ShortestPathEucliedean
     {
         [Test]
         public void GraphCreate()
@@ -119,29 +119,29 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
             e1.Label = "n6, n4";
 
             Edge<string, int> e2 = new Edge<string, int>(n4, n3)
-                                    {
-                                        Label = "n4, n3"
-                                    };
+                                            {
+                                                Label = "n4, n3"
+                                            };
             Edge<string, int> e3 = new Edge<string, int>(n4, n5)
-                                    {
-                                        Label = "n4, n5"
-                                    };
+                                            {
+                                                Label = "n4, n5"
+                                            };
             Edge<string, int> e4 = new Edge<string, int>(n2, n3)
-                                    {
-                                        Label = "n2, n3"
-                                    };
+                                            {
+                                                Label = "n2, n3"
+                                            };
             Edge<string, int> e5 = new Edge<string, int>(n5, n2)
-                                    {
-                                        Label = "n5, n2"
-                                    };
+                                            {
+                                                Label = "n5, n2"
+                                            };
             Edge<string, int> e6 = new Edge<string, int>(n2, n1)
-                                    {
-                                        Label = "n2, n1"
-                                    };
+                                            {
+                                                Label = "n2, n1"
+                                            };
             Edge<string, int> e7 = new Edge<string, int>(n5, n1)
-                                    {
-                                        Label = "n5, n1"
-                                    };
+                                            {
+                                                Label = "n5, n1"
+                                            };
 
             Console_WriteLine($" Edge<string, int> e1 = {e1.ToString()}");
             Console_WriteLine($" Edge<string, int> e2 = {e2.ToString()}");

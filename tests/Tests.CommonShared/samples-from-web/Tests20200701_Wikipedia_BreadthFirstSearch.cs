@@ -69,14 +69,14 @@ using System.Collections.ObjectModel;
 
 using Core.Math.Discrete.GraphTheory.Graphs;
 
-namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
+namespace UnitTests.SamplesFromWeb
 {
     /// <summary>
     /// Test01
     /// </summary>
-    /// <see href="https://en.wikipedia.org/wiki/Depth-first_search"/>
+    /// <see href="https://en.wikipedia.org/wiki/Breadth-first_search"/>
     [TestClass]
-    public partial class Tests20200701_Wikipedia_DepthFirstSearch
+    public partial class Tests20200701_Wikipedia_BreadthFirstSearch
     {
         [Test]
         public void GraphCreate()

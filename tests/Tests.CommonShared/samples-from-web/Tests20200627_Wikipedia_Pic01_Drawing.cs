@@ -69,14 +69,14 @@ using System.Collections.ObjectModel;
 
 using Core.Math.Discrete.GraphTheory.Graphs;
 
-namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
+namespace UnitTests.SamplesFromWeb
 {
     /// <summary>
     /// Test01
     /// </summary>
-    /// <see href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm"/>
+    /// <see href="https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/"/>
     [TestClass]
-    public partial class Tests20200701_Wikipedia_Dijkstra
+    public partial class Tests20200627_Wikipedia_Pic01_Drawing
     {
         [Test]
         public void GraphCreate()
@@ -150,21 +150,6 @@ namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
             Graph<int, string> g = new Graph<int, string>();
 
             g.Add(n1);
-            g.Add(n2);
-            g.Add(n3);
-            g.Add(n4);
-            g.Add(n5);
-            g.Add(n6);
-
-            g.Add(e1);
-            g.Add(e2);
-            g.Add(e3);
-            g.Add(e4);
-            g.Add(e5);
-            g.Add(e6);
-            g.Add(e7);
-
-            Console_WriteLine($" {g.ToString()}");
 
             return;
         }

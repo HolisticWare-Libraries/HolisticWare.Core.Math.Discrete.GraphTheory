@@ -57,7 +57,8 @@ using BenchmarkDotNet.Running;
 using BenchmarkDotNet.Configs;
 using BenchmarkDotNet.Attributes.Jobs;
 #else
-using Benchmark = HolisticWare.Core.Testing.BenchmarkTests.Benchmark;using ShortRunJob = HolisticWare.Core.Testing.BenchmarkTests.ShortRunJob;
+using Benchmark = HolisticWare.Core.Testing.BenchmarkTests.Benchmark;
+using ShortRunJob = HolisticWare.Core.Testing.BenchmarkTests.ShortRunJob;
 #endif
 
 using System;
@@ -68,22 +69,95 @@ using System.Collections.ObjectModel;
 
 using Core.Math.Discrete.GraphTheory.Graphs;
 
-namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
+namespace UnitTests.SamplesFromWeb
 {
     /// <summary>
     /// Test01
     /// </summary>
-    /// <see href="https://en.wikipedia.org/wiki/Graph_theory#Applications"/>
+    /// <see href="https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/"/>
     [TestClass]
-    public partial class Tests20200627_Test02_Wikipedia_Pic06_KoenigsbergBridge
+    public partial class Tests20200627_Test01_GeeksForGeeks
     {
+        Node<string> n0 = new Node<string>();
+        Node<string> n1 = new Node<string>();
+        Node<string> n2 = new Node<string>();
+        Node<string> n3 = new Node<string>();
+        Node<string> n4 = new Node<string>();
+
         [Test]
-        public void GraphCreate()
+        public void T011_Nodes_Define()
         {
-            Graph<string, string> g = new Graph<string, string>();
+            n0.Label = "0";
+            n1.Label = "1";
+            n2.Label = "2";
+            n3.Label = "3";
+            n4.Label = "4";
 
             return;
         }
 
+        Edge<string, string> e04;
+        Edge<string, string> e01;
+        Edge<string, string> e14;
+        Edge<string, string> e43;
+        Edge<string, string> e13;
+        Edge<string, string> e12;
+        Edge<string, string> e32;
+
+        [Test]
+        public void T012_Edges_Define()
+        {
+            e04 = new Edge<string, string>(n0, n4);
+            e01 = new Edge<string, string>(n0, n1);
+            e14 = new Edge<string, string>(n1, n4);
+            e43 = new Edge<string, string>(n4, n3);
+            e13 = new Edge<string, string>(n1, n3);
+            e12 = new Edge<string, string>(n1, n2);
+            e32 = new Edge<string, string>(n3, n2);
+
+            e04.Label = "0 - 4";
+            e01.Label = "0 - 1";
+            e14.Label = "1 - 4";
+            e43.Label = "4 - 3";
+            e13.Label = "1 - 3";
+            e12.Label = "1 - 2";
+            e32.Label = "3 - 2";
+
+            #if MSTEST || NUNIT
+            Assert.IsTrue(e32.Label == "3 - 2");
+            #endif
+
+            return;
+        }
+
+        [Test]
+        public void T013_Graph_Define()
+        {
+            T011_Nodes_Define();
+            T012_Edges_Define();
+
+            Graph<string, string> g = new Graph<string, string>();
+
+            g.Add(n0);
+            g.Add(n1);
+            g.Add(n2);
+            g.Add(n3);
+            g.Add(n4);
+
+            g.Add(e04);
+            g.Add(e01);
+            g.Add(e14);
+            g.Add(e43);
+            g.Add(e13);
+            g.Add(e12);
+            g.Add(e32);
+
+            #if MSTEST || NUNIT
+            Assert.IsTrue(g.Nodes.Count == 5);
+            Assert.IsTrue(g.Edges.Count == 7);
+            #endif
+
+            return;
+        }
     }
 }

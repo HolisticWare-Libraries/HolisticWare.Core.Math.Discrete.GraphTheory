@@ -69,14 +69,14 @@ using System.Collections.ObjectModel;
 
 using Core.Math.Discrete.GraphTheory.Graphs;
 
-namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
+namespace UnitTests.SamplesFromWeb
 {
     /// <summary>
     /// Test01
     /// </summary>
     /// <see href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm"/>
     [TestClass]
-    public partial class Tests20200701_Wikipedia_ShortestPathEucliedean
+    public partial class Tests20200701_Wikipedia_Dijkstra
     {
         [Test]
         public void GraphCreate()

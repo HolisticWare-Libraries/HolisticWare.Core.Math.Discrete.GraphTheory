@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFrameworks>net6.0</TargetFrameworks>
     <LangVersion>Latest</LangVersion>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
@@ -9,9 +9,7 @@
     <DocumentationFile>bin\Debug\netcoreapp2.0\UnitTests.MSTest.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>
-    </DebugType>
-    <DefineConstants>TRACE;MSTEST;RELEASE;NETCOREAPP2_0</DefineConstants>
+    <DefineConstants>TRACE;MSTEST;RELEASE;NET6</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="System.Memory" Version="4.5.5" />
@@ -20,9 +18,6 @@
     <PackageReference Include="MSTest.TestAdapter" Version="3.0.2" />
     <PackageReference Include="MSTest.TestFramework" Version="3.0.2" />
     <PackageReference Include="Nito.AsyncEx.Context" Version="5.1.2" />
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\..\source\HolisticWare.Core.Math.Discrete.GraphTheory\HolisticWare.Core.Math.Discrete.GraphTheory.csproj" />

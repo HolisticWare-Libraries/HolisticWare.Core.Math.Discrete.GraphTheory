@@ -9,17 +9,17 @@
     <Import_RootNamespace>Tests.CommonShared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200627_GeeksForGeeks.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200627_Wikipedia_Pic01_Drawing.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200627_Wikipedia_Pic04_Languages.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200627_Wikipedia_Pic04_MorenoSociogram.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200627_Wikipedia_Pic06_KoenigsbergBridge.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200630_RIP_Tutorial.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200701_Wikipedia_DepthFirstSearch.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200701_Wikipedia_BreadthFirstSearch.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200710_Wikipedia_Dijkstra.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200701_Wikipedia.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200701_Wikipedia_AStarSearch.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)01-simple\Tests20200701_Wikipedia_BellmanFord.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)samples-from-web\Tests20200627_GeeksForGeeks.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)samples-from-web\Tests20200627_Wikipedia_Pic01_Drawing.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)samples-from-web\Tests20200627_Wikipedia_Pic04_Languages.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)samples-from-web\Tests20200627_Wikipedia_Pic04_MorenoSociogram.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)samples-from-web\Tests20200627_Wikipedia_Pic06_KoenigsbergBridge.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)samples-from-web\Tests20200630_RIP_Tutorial.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)samples-from-web\Tests20200701_Wikipedia_DepthFirstSearch.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)samples-from-web\Tests20200701_Wikipedia_BreadthFirstSearch.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)samples-from-web\Tests20200710_Wikipedia_Dijkstra.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)samples-from-web\Tests20200701_Wikipedia.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)samples-from-web\Tests20200701_Wikipedia_AStarSearch.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)samples-from-web\Tests20200701_Wikipedia_BellmanFord.cs" />
   </ItemGroup>
 </Project>

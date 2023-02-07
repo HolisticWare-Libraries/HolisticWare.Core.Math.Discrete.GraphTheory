@@ -57,7 +57,8 @@ using BenchmarkDotNet.Running;
 using BenchmarkDotNet.Configs;
 using BenchmarkDotNet.Attributes.Jobs;
 #else
-using Benchmark = HolisticWare.Core.Testing.BenchmarkTests.Benchmark;using ShortRunJob = HolisticWare.Core.Testing.BenchmarkTests.ShortRunJob;
+using Benchmark = HolisticWare.Core.Testing.BenchmarkTests.Benchmark;
+using ShortRunJob = HolisticWare.Core.Testing.BenchmarkTests.ShortRunJob;
 #endif
 
 using System;
@@ -68,14 +69,14 @@ using System.Collections.ObjectModel;
 
 using Core.Math.Discrete.GraphTheory.Graphs;
 
-namespace UnitTests.Core.Math.Discrete.GraphTheory.Graphs
+namespace UnitTests.SamplesFromWeb
 {
     /// <summary>
     /// Test01
     /// </summary>
     /// <see href="https://en.wikipedia.org/wiki/Graph_theory#Applications"/>
     [TestClass]
-    public partial class Tests20200627_Test02_Wikipedia_Pic04_Languages
+    public partial class Tests20200627_Test02_Wikipedia_Pic04_MorenoSociogram
     {
         [Test]
         public void GraphCreate()

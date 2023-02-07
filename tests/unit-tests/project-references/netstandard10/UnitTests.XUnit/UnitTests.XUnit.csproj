@@ -1,10 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <LangVersion>Latest</LangVersion>
-    <IsPackable>false</IsPackable>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFrameworks>net6.0</TargetFrameworks>
+        <LangVersion>Latest</LangVersion>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DefineConstants>TRACE;XUNIT;DEBUG;NET6</DefineConstants>
