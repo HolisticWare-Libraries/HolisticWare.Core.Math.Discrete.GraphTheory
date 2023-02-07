@@ -80,6 +80,15 @@ namespace Core.Math.Discrete.GraphTheory.Graphs
                 edges.Add(e);
             }
 
+            if (!nodes.Contains(e.Nodes.First))
+            {
+                nodes.Add(e.Nodes.First);
+            }
+            if (!nodes.Contains(e.Nodes.Second))
+            {
+                nodes.Add(e.Nodes.Second);
+            }
+
             return;
         }
 
@@ -95,7 +104,7 @@ namespace Core.Math.Discrete.GraphTheory.Graphs
                         (
                             (Edge<EdgeType, NodeType> e) =>
                             {
-                                return (e.Tuple.first == n || e.Tuple.second == n);
+                                return (e.Nodes.First == n || e.Nodes.Second == n);
                             }
                         );
 
