@@ -18,6 +18,9 @@ namespace Core.Math.Discrete.GraphTheory.Graphs
                                                 Node<NodeType> end
                                             )
         {
+            this.Nodes = (First: begin, Second: end);
+
+            return;
         }
 
         public
@@ -28,15 +31,29 @@ namespace Core.Math.Discrete.GraphTheory.Graphs
             set;
         }
 
+        private
+            (
+                Node<NodeType> First,
+                Node<NodeType> Second
+            )
+                                        nodes;
+
         public
             (
-                Node<NodeType> first,
-                Node<NodeType> second
+                Node<NodeType> First,
+                Node<NodeType> Second
             )
-                                        Tuple
+                                        Nodes
         {
-            get;
-            set;
+            get
+            {
+                return this.nodes;
+            }
+
+            set
+            {
+                this.nodes = value;
+            }
         }
 
         public override
