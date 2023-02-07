@@ -1,11 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netstandard1.0</TargetFramework>
-        <!--
-        <DefaultItemExcludes>$(DefaultItemExcludes);.DS_Store</DefaultItemExcludes>
-        <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-        -->
+        <TargetFrameworks>netstandard1.0</TargetFrameworks>
+        <LangVersion>Latest</LangVersion>
         <RootNamespace>Core.Math.Discrete.GraphTheory</RootNamespace>
         <AssemblyName>HolisticWare.$(RootNamespace)</AssemblyName>
     </PropertyGroup>
@@ -48,7 +45,7 @@
             https://secure.gravatar.com/avatar/b662959e712466f393541935b664d3c5
         </iconUrl>
         <PackageIconUrl>
-            https://secure.gravatar.com/avatar/b662959e712466f393541935b664d3c5        
+            https://secure.gravatar.com/avatar/b662959e712466f393541935b664d3c5
         </PackageIconUrl>
         <VersionPrefix>0.0.1</VersionPrefix>
         <!--
@@ -62,19 +59,14 @@
         <PackageOutputPath>../../output</PackageOutputPath>
     </PropertyGroup>
 
-    <ItemGroup>
-        <PackageReference Include="System.ValueTuple" Version="4.5.0" />
-    </ItemGroup>
-
     <!--
     https://learn.microsoft.com/en-us/dotnet/standard/frameworks
-
     https://tsuyoshiushio.medium.com/ignore-specific-files-for-a-target-framework-on-c-63e2085af112
     https://learn.microsoft.com/en-us/dotnet/maui/platform-integration/configure-multi-targeting?view=net-maui-7.0
     -->
     <!-- common NuGet package refs that affect all projects -->
     <ItemGroup>
-        <PackageReference Include="System.ValueTuple" Version="*" />
+        <PackageReference Include="System.ValueTuple" Version="4.5.0" />
     </ItemGroup>
 
     <!--
