@@ -1,0 +1,226 @@
+﻿// /*
+//    Copyright (c) 2017-12
+//
+//    moljac
+//    Test.cs
+//
+//    Permission is hereby granted, free of charge, to any person
+//    obtaining a copy of this software and associated documentation
+//    files (the "Software"), to deal in the Software without
+//    restriction, including without limitation the rights to use,
+//    copy, modify, merge, publish, distribute, sublicense, and/or sell
+//    copies of the Software, and to permit persons to whom the
+//    Software is furnished to do so, subject to the following
+//    conditions:
+//
+//    The above copyright notice and this permission notice shall be
+//    included in all copies or substantial portions of the Software.
+//
+//    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+//    EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+//    OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+//    NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+//    HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+//    WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+//    FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+//    OTHER DEALINGS IN THE SOFTWARE.
+// */
+
+#if XUNIT
+using Xunit;
+// NUnit aliases
+using Test = Xunit.FactAttribute;
+using OneTimeSetUp = HolisticWare.Core.Testing.UnitTests.UnitTestsCompatibilityAliasAttribute;
+// XUnit aliases
+using TestClass = HolisticWare.Core.Testing.UnitTests.UnitTestsCompatibilityAliasAttribute;
+#elif NUNIT
+using NUnit.Framework;
+// MSTest aliases
+using TestInitialize = NUnit.Framework.SetUpAttribute;
+using TestProperty = NUnit.Framework.PropertyAttribute;
+using TestClass = NUnit.Framework.TestFixtureAttribute;
+using TestMethod = NUnit.Framework.TestAttribute;
+using TestCleanup = NUnit.Framework.TearDownAttribute;
+// XUnit aliases
+using Fact = NUnit.Framework.TestAttribute;
+#elif MSTEST
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+// NUnit aliases
+using Test = Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute;
+using OneTimeSetUp = Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitializeAttribute;
+// XUnit aliases
+using Fact = Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute;
+#endif
+
+#if BENCHMARKDOTNET
+using BenchmarkDotNet.Running;
+using BenchmarkDotNet.Configs;
+using BenchmarkDotNet.Attributes.Jobs;
+#else
+using Benchmark = HolisticWare.Core.Testing.BenchmarkTests.Benchmark;
+using ShortRunJob = HolisticWare.Core.Testing.BenchmarkTests.ShortRunJob;
+#endif
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Diagnostics;
+using System.Collections.ObjectModel;
+
+using Core.Math.Discrete.GraphTheory.Graphs;
+
+namespace UnitTests.SamplesBasic
+{
+    /// <summary>
+    /// Test01
+    /// </summary>
+    /// <see href="https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/"/>
+    [TestClass]
+    public partial class Tests20230207_GraphDefinitions
+    {
+        [Test]
+        public void T011_Nodes_Define()
+        {
+            Node<string> n0 = new Node<string>();
+            Node<string> n1 = new Node<string>();
+            Node<string> n2 = new Node<string>();
+            Node<string> n3 = new Node<string>();
+            Node<string> n4 = new Node<string>();
+
+            n0.Label = "0";
+            n1.Label = "1";
+            n2.Label = "2";
+            n3.Label = "3";
+            n4.Label = "4";
+
+            return;
+        }
+
+
+        [Test]
+        public void T012_Edges_Define()
+        {
+            Node<string> n0 = new Node<string>();
+            Node<string> n1 = new Node<string>();
+            Node<string> n2 = new Node<string>();
+            Node<string> n3 = new Node<string>();
+            Node<string> n4 = new Node<string>();
+
+            Edge<string, string> e04;
+            Edge<string, string> e01;
+            Edge<string, string> e14;
+            Edge<string, string> e43;
+            Edge<string, string> e13;
+            Edge<string, string> e12;
+            Edge<string, string> e32;
+
+            e04 = new Edge<string, string>(n0, n4);
+            e01 = new Edge<string, string>(n0, n1);
+            e14 = new Edge<string, string>(n1, n4);
+            e43 = new Edge<string, string>(n4, n3);
+            e13 = new Edge<string, string>(n1, n3);
+            e12 = new Edge<string, string>(n1, n2);
+            e32 = new Edge<string, string>(n3, n2);
+
+            e04.Label = "0 - 4";
+            e01.Label = "0 - 1";
+            e14.Label = "1 - 4";
+            e43.Label = "4 - 3";
+            e13.Label = "1 - 3";
+            e12.Label = "1 - 2";
+            e32.Label = "3 - 2";
+
+            #if MSTEST || NUNIT
+            Assert.IsTrue(e32.Label == "3 - 2");
+            #endif
+
+            return;
+        }
+
+        [Test]
+        public void T013_Graph_Define()
+        {
+            Node<string> n0 = new Node<string>();
+            Node<string> n1 = new Node<string>();
+            Node<string> n2 = new Node<string>();
+            Node<string> n3 = new Node<string>();
+            Node<string> n4 = new Node<string>();
+
+            Edge<string, string> e04;
+            Edge<string, string> e01;
+            Edge<string, string> e14;
+            Edge<string, string> e43;
+            Edge<string, string> e13;
+            Edge<string, string> e12;
+            Edge<string, string> e32;
+
+            e04 = new Edge<string, string>(n0, n4);
+            e01 = new Edge<string, string>(n0, n1);
+            e14 = new Edge<string, string>(n1, n4);
+            e43 = new Edge<string, string>(n4, n3);
+            e13 = new Edge<string, string>(n1, n3);
+            e12 = new Edge<string, string>(n1, n2);
+            e32 = new Edge<string, string>(n3, n2);
+
+            e04.Label = "0 - 4";
+            e01.Label = "0 - 1";
+            e14.Label = "1 - 4";
+            e43.Label = "4 - 3";
+            e13.Label = "1 - 3";
+            e12.Label = "1 - 2";
+            e32.Label = "3 - 2";
+
+            Graph<string, string> g = new Graph<string, string>();
+
+            g.Add(n0);
+            g.Add(n1);
+            g.Add(n2);
+            g.Add(n3);
+            g.Add(n4);
+
+            g.Add(e04);
+            g.Add(e01);
+            g.Add(e14);
+            g.Add(e43);
+            g.Add(e13);
+            g.Add(e12);
+            g.Add(e32);
+
+            #if MSTEST || NUNIT
+            Assert.IsTrue(g.Nodes.Count == 5);
+            Assert.IsTrue(g.Edges.Count == 7);
+            #endif
+
+            return;
+        }
+
+        [Test]
+        public void T013_Graph_Define_EdgesOnly()
+        {
+            Node<string> n001 = new Node<string>();
+            Node<string> n002 = new Node<string>()
+                                                {
+                                                    Label = "n002",
+                                                };
+            Node<string> n003 = new Node<string>();
+            Node<string> n004 = new Node<string>();
+
+            Edge<string, string> e001 = new Edge<string, string>(n001, n002);
+            Edge<string, string> e002 = new Edge<string, string>(n001, n003);
+
+
+
+            Graph<string, string> g = new Graph<string, string>();
+
+            g.Add(e001);
+            g.Add(e002);
+
+            #if MSTEST || NUNIT
+            Assert.IsTrue(g.Nodes.Count == 3);
+            Assert.IsTrue(g.Edges.Count == 2);
+            #endif
+
+            return;
+        }
+    }
+}
