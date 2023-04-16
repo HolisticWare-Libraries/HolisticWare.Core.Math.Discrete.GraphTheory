@@ -60,6 +60,8 @@ HolisticWare.Core.Math.Discrete.GraphTheory
 
 *   samples/examples
 
+    *   https://github.com/cschen1205/cs-algorithms/tree/master/cs-algorithms/Graphs
+
     *   https://riptutorial.com/algorithm/example/23953/introduction-to-graph-theory
 
         TODO: @todo riptutorial samples
@@ -69,7 +71,7 @@ HolisticWare.Core.Math.Discrete.GraphTheory
     *   https://www.hackerearth.com/practice/algorithms/graphs/graph-representation/tutorial/
 
     *   https://www.codeproject.com/Articles/1221034/Pathfinding-Algorithms-in-Csharp
-    
+
     *   http://www.graph-magics.com/practic_use.php
 
     *   https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/readings/MIT6_042JF10_chap05.pdf
