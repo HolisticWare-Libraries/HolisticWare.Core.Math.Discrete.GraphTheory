@@ -59,6 +59,10 @@
         <PackageOutputPath>../../output</PackageOutputPath>
     </PropertyGroup>
 
+    <PropertyGroup Condition="'$(Configuration)'=='Debug'">
+        <CreatePackage>false</CreatePackage>
+    </PropertyGroup>
+
     <!--
     https://learn.microsoft.com/en-us/dotnet/standard/frameworks
     https://tsuyoshiushio.medium.com/ignore-specific-files-for-a-target-framework-on-c-63e2085af112
